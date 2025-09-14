@@ -6782,8 +6782,8 @@ end
 if not n then
 n=not n
 o.WindUI:Notify{
-Title="Minimize",
-Content="You've closed the Window. "..K,
+Title="已开启小悬浮窗",
+Content="你已缩小窗口需要请再次打开. "..K,
 Icon="eye-off",
 Duration=5,
 }
@@ -7240,7 +7240,7 @@ p:CreateTopbarButton("Close","x",function()
 g(p.UIElements.Main,0.35,{Position=UDim2.new(0.5,0,0.5,0)},Enum.EasingStyle.Quint,Enum.EasingDirection.Out):Play()
 p:Dialog{
 
-Title="Snow中心",
+Title="轻烟Hub",
 Content="是否要关闭?",
 Buttons={
 {
