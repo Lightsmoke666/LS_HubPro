@@ -2781,7 +2781,12 @@ IsFocusing=false,
 local n
 local o
 local p
-local q=k.Value.Default or k.Value.Min or 0
+local q
+if type(k.Value) == "table" then
+    q = k.Value.Default or k.Value.Min or 0
+else
+    q = k.Value or 0
+end
 
 local r=q
 local s=(q-(k.Value.Min or 0))/((k.Value.Max or 100)-(k.Value.Min or 0))
