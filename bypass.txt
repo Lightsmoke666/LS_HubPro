@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://github.com/Lightsmoke666/LS_HubPro/raw/refs/heads/main/LS_HubProV3.0.lua"))()
